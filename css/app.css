@@ -1,0 +1,1751 @@
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html {
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio, canvas, progress, video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden], template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button, input, select, textarea, optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, [type=button], [type=reset], [type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+.president-serif {
+    font-family: serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+.president-wide {
+    letter-spacing: 4px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+.president-image {
+    max-width: 100%;
+    height: auto
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    color: inherit
+}
+
+.president-table, .president-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+
+.president-table-all {
+    border: 1px solid #ccc
+}
+
+.president-bordered tr, .president-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.president-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.president-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.president-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.president-hoverable tbody tr:hover, .president-ul.president-hoverable li:hover {
+    background-color: #ccc
+}
+
+.president-centered tr th, .president-centered tr td {
+    text-align: center
+}
+
+.president-table td, .president-table th, .president-table-all td, .president-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.president-table th:first-child, .president-table td:first-child, .president-table-all th:first-child, .president-table-all td:first-child {
+    padding-left: 16px
+}
+
+.president-btn, .president-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.president-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.president-btn, .president-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.president-disabled, .president-btn:disabled, .president-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+.president-disabled *, :disabled * {
+    pointer-events: none
+}
+
+.president-btn.president-disabled:hover, .president-btn:disabled:hover {
+    box-shadow: none
+}
+
+.president-badge, .president-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+
+.president-badge {
+    border-radius: 50%
+}
+
+.president-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.president-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+
+.president-ul li:last-child {
+    border-bottom: none
+}
+
+.president-tooltip, .president-display-container {
+    position: relative
+}
+
+.president-tooltip .president-text {
+    display: none
+}
+
+.president-tooltip:hover .president-text {
+    display: inline-block
+}
+
+.president-ripple:active {
+    opacity: 0.5
+}
+
+.president-ripple {
+    transition: opacity 0s
+}
+
+.president-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.president-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+.president-dropdown-click, .president-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.president-dropdown-hover:hover .president-dropdown-content {
+    display: block
+}
+
+.president-dropdown-hover:first-child, .president-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+
+.president-dropdown-hover:hover > .president-button:first-child, .president-dropdown-click:hover > .president-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+
+.president-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1
+}
+
+.president-check, .president-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+
+.president-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+.president-bar-block .president-dropdown-hover, .president-bar-block .president-dropdown-click {
+    width: 100%
+}
+
+.president-bar-block .president-dropdown-hover .president-dropdown-content, .president-bar-block .president-dropdown-click .president-dropdown-content {
+    min-width: 100%
+}
+
+.president-bar-block .president-dropdown-hover .president-button, .president-bar-block .president-dropdown-click .president-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+
+.president-main, #main {
+    transition: margin-left .4s
+}
+
+.president-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.president-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+
+.president-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.president-center .president-bar {
+    display: inline-block;
+    width: auto
+}
+
+.president-bar .president-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.president-bar .president-dropdown-hover, .president-bar .president-dropdown-click {
+    position: static;
+    float: left
+}
+
+.president-bar .president-button {
+    white-space: normal
+}
+
+.president-bar-block .president-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+.president-bar-block.president-center .president-bar-item {
+    text-align: center
+}
+
+.president-block {
+    display: block;
+    width: 100%
+}
+
+.president-responsive {
+    display: block;
+    overflow-x: auto
+}
+
+.president-container:after, .president-container:before, .president-panel:after, .president-panel:before, .president-row:after, .president-row:before, .president-row-padding:after, .president-row-padding:before,
+.president-cell-row:before, .president-cell-row:after, .president-clear:after, .president-clear:before, .president-bar:before, .president-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.president-col, .president-half, .president-third, .president-twothird, .president-threequarter, .president-quarter {
+    float: left;
+    width: 100%
+}
+
+.president-col.s1 {
+    width: 8.33333%
+}
+
+.president-col.s2 {
+    width: 16.66666%
+}
+
+.president-col.s3 {
+    width: 24.99999%
+}
+
+.president-col.s4 {
+    width: 33.33333%
+}
+
+.president-col.s5 {
+    width: 41.66666%
+}
+
+.president-col.s6 {
+    width: 49.99999%
+}
+
+.president-col.s7 {
+    width: 58.33333%
+}
+
+.president-col.s8 {
+    width: 66.66666%
+}
+
+.president-col.s9 {
+    width: 74.99999%
+}
+
+.president-col.s10 {
+    width: 83.33333%
+}
+
+.president-col.s11 {
+    width: 91.66666%
+}
+
+.president-col.s12 {
+    width: 99.99999%
+}
+
+@media (min-width: 601px) {
+    .president-col.m1 {
+        width: 8.33333%
+    }
+
+    .president-col.m2 {
+        width: 16.66666%
+    }
+
+    .president-col.m3, .president-quarter {
+        width: 24.99999%
+    }
+
+    .president-col.m4, .president-third {
+        width: 33.33333%
+    }
+
+    .president-col.m5 {
+        width: 41.66666%
+    }
+
+    .president-col.m6, .president-half {
+        width: 49.99999%
+    }
+
+    .president-col.m7 {
+        width: 58.33333%
+    }
+
+    .president-col.m8, .president-twothird {
+        width: 66.66666%
+    }
+
+    .president-col.m9, .president-threequarter {
+        width: 74.99999%
+    }
+
+    .president-col.m10 {
+        width: 83.33333%
+    }
+
+    .president-col.m11 {
+        width: 91.66666%
+    }
+
+    .president-col.m12 {
+        width: 99.99999%
+    }
+}
+
+@media (min-width: 993px) {
+    .president-col.l1 {
+        width: 8.33333%
+    }
+
+    .president-col.l2 {
+        width: 16.66666%
+    }
+
+    .president-col.l3 {
+        width: 24.99999%
+    }
+
+    .president-col.l4 {
+        width: 33.33333%
+    }
+
+    .president-col.l5 {
+        width: 41.66666%
+    }
+
+    .president-col.l6 {
+        width: 49.99999%
+    }
+
+    .president-col.l7 {
+        width: 58.33333%
+    }
+
+    .president-col.l8 {
+        width: 66.66666%
+    }
+
+    .president-col.l9 {
+        width: 74.99999%
+    }
+
+    .president-col.l10 {
+        width: 83.33333%
+    }
+
+    .president-col.l11 {
+        width: 91.66666%
+    }
+
+    .president-col.l12 {
+        width: 99.99999%
+    }
+}
+
+.president-rest {
+    overflow: hidden
+}
+
+.president-stretch {
+    margin-left: -16px;
+    margin-right: -16px
+}
+
+.president-content, .president-auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.president-content {
+    max-width: 980px
+}
+
+.president-auto {
+    max-width: 1140px
+}
+
+.president-cell-row {
+    display: table;
+    width: 100%
+}
+
+.president-cell {
+    display: table-cell
+}
+
+.president-cell-top {
+    vertical-align: top
+}
+
+.president-cell-middle {
+    vertical-align: middle
+}
+
+.president-cell-bottom {
+    vertical-align: bottom
+}
+
+.president-hide {
+    display: none !important
+}
+
+.president-show-block, .president-show {
+    display: block !important
+}
+
+.president-show-inline-block {
+    display: inline-block !important
+}
+
+@media (max-width: 1205px) {
+    .president-auto {
+        max-width: 95%
+    }
+}
+
+@media (max-width: 600px) {
+    .president-modal-content {
+        margin: 0 10px;
+        width: auto !important
+    }
+
+    .president-modal {
+        padding-top: 30px
+    }
+
+    .president-dropdown-hover.president-mobile .president-dropdown-content, .president-dropdown-click.president-mobile .president-dropdown-content {
+        position: relative
+    }
+
+    .president-hide-small {
+        display: none !important
+    }
+
+    .president-mobile {
+        display: block;
+        width: 100% !important
+    }
+
+    .president-bar-item.president-mobile, .president-dropdown-hover.president-mobile, .president-dropdown-click.president-mobile {
+        text-align: center
+    }
+
+    .president-dropdown-hover.president-mobile, .president-dropdown-hover.president-mobile .president-btn, .president-dropdown-hover.president-mobile .president-button, .president-dropdown-click.president-mobile, .president-dropdown-click.president-mobile .president-btn, .president-dropdown-click.president-mobile .president-button {
+        width: 100%
+    }
+}
+
+@media (max-width: 768px) {
+    .president-modal-content {
+        width: 500px
+    }
+
+    .president-modal {
+        padding-top: 50px
+    }
+}
+
+@media (min-width: 993px) {
+    .president-modal-content {
+        width: 900px
+    }
+
+    .president-hide-large {
+        display: none !important
+    }
+
+    .president-sidebar.president-collapse {
+        display: block !important
+    }
+}
+
+@media (max-width: 992px) and (min-width: 601px) {
+    .president-hide-medium {
+        display: none !important
+    }
+}
+
+@media (max-width: 992px) {
+    .president-sidebar.president-collapse {
+        display: none
+    }
+
+    .president-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+
+    .president-auto {
+        max-width: 100%
+    }
+}
+
+.president-top, .president-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.president-top {
+    top: 0
+}
+
+.president-bottom {
+    bottom: 0
+}
+
+.president-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+.president-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.president-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.president-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.president-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.president-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.president-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.president-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.president-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.president-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+.president-display-container:hover .president-display-hover {
+    display: block
+}
+
+.president-display-container:hover span.president-display-hover {
+    display: inline-block
+}
+
+.president-display-hover {
+    display: none
+}
+
+.president-display-position {
+    position: absolute
+}
+
+.president-circle {
+    border-radius: 50%
+}
+
+.president-round-small {
+    border-radius: 2px
+}
+
+.president-round, .president-round-medium {
+    border-radius: 4px
+}
+
+.president-round-large {
+    border-radius: 8px
+}
+
+.president-round-xlarge {
+    border-radius: 16px
+}
+
+.president-round-xxlarge {
+    border-radius: 32px
+}
+
+.president-row-padding, .president-row-padding > .president-half, .president-row-padding > .president-third, .president-row-padding > .president-twothird, .president-row-padding > .president-threequarter, .president-row-padding > .president-quarter, .president-row-padding > .president-col {
+    padding: 0 8px
+}
+
+.president-container, .president-panel {
+    padding: 0.01em 16px
+}
+
+.president-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.president-code, .president-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+
+.president-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+
+.president-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+
+.president-card, .president-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.president-card-4, .president-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.president-spin {
+    animation: president-spin 2s infinite linear
+}
+
+@keyframes president-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.president-animate-fading {
+    animation: fading 10s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.president-animate-opacity {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.president-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.president-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.president-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.president-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.president-animate-zoom {
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.president-animate-input {
+    transition: width 0.4s ease-in-out
+}
+
+.president-animate-input:focus {
+    width: 100% !important
+}
+
+.president-opacity, .president-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.president-opacity-off, .president-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.president-opacity-max {
+    opacity: 0.25
+}
+
+.president-opacity-min {
+    opacity: 0.75
+}
+
+.president-greyscale-max, .president-grayscale-max, .president-hover-greyscale:hover, .president-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+
+.president-greyscale, .president-grayscale {
+    filter: grayscale(75%)
+}
+
+.president-greyscale-min, .president-grayscale-min {
+    filter: grayscale(50%)
+}
+
+.president-sepia {
+    filter: sepia(75%)
+}
+
+.president-sepia-max, .president-hover-sepia:hover {
+    filter: sepia(100%)
+}
+
+.president-sepia-min {
+    filter: sepia(50%)
+}
+
+.president-tiny {
+    font-size: 10px !important
+}
+
+.president-small {
+    font-size: 12px !important
+}
+
+.president-medium {
+    font-size: 15px !important
+}
+
+.president-large {
+    font-size: 18px !important
+}
+
+.president-xlarge {
+    font-size: 24px !important
+}
+
+.president-xxlarge {
+    font-size: 36px !important
+}
+
+.president-xxxlarge {
+    font-size: 48px !important
+}
+
+.president-jumbo {
+    font-size: 64px !important
+}
+
+.president-left-align {
+    text-align: left !important
+}
+
+.president-right-align {
+    text-align: right !important
+}
+
+.president-justify {
+    text-align: justify !important
+}
+
+.president-center {
+    text-align: center !important
+}
+
+.president-border-0 {
+    border: 0 !important
+}
+
+.president-border {
+    border: 1px solid #ccc !important
+}
+
+.president-border-top {
+    border-top: 1px solid #ccc !important
+}
+
+.president-border-bottom {
+    border-bottom: 1px solid #ccc !important
+}
+
+.president-border-left {
+    border-left: 1px solid #ccc !important
+}
+
+.president-border-right {
+    border-right: 1px solid #ccc !important
+}
+
+.president-topbar {
+    border-top: 6px solid #ccc !important
+}
+
+.president-bottombar {
+    border-bottom: 6px solid #ccc !important
+}
+
+.president-leftbar {
+    border-left: 6px solid #ccc !important
+}
+
+.president-rightbar {
+    border-right: 6px solid #ccc !important
+}
+
+.president-section, .president-code {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important
+}
+
+.president-margin {
+    margin: 16px !important
+}
+
+.president-margin-top {
+    margin-top: 16px !important
+}
+
+.president-margin-bottom {
+    margin-bottom: 16px !important
+}
+
+.president-margin-left {
+    margin-left: 16px !important
+}
+
+.president-margin-right {
+    margin-right: 16px !important
+}
+
+.president-padding-small {
+    padding: 4px 8px !important
+}
+
+.president-padding {
+    padding: 8px 16px !important
+}
+
+.president-padding-large {
+    padding: 12px 24px !important
+}
+
+.president-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+.president-padding-24 {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important
+}
+
+.president-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+.president-padding-48 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important
+}
+
+.president-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.president-left {
+    float: left !important
+}
+
+.president-right {
+    float: right !important
+}
+
+.president-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.president-transparent, .president-hover-none:hover {
+    background-color: transparent !important
+}
+
+.president-hover-none:hover {
+    box-shadow: none !important
+}
+
+/* Colors */
+.president-amber, .president-hover-amber:hover {
+    color: #000 !important;
+    background-color: #ffc107 !important
+}
+
+.president-aqua, .president-hover-aqua:hover {
+    color: #000 !important;
+    background-color: #00ffff !important
+}
+
+.president-blue, .president-hover-blue:hover {
+    color: #fff !important;
+    background-color: #2196F3 !important
+}
+
+.president-light-blue, .president-hover-light-blue:hover {
+    color: #000 !important;
+    background-color: #87CEEB !important
+}
+
+.president-brown, .president-hover-brown:hover {
+    color: #fff !important;
+    background-color: #795548 !important
+}
+
+.president-cyan, .president-hover-cyan:hover {
+    color: #000 !important;
+    background-color: #00bcd4 !important
+}
+
+.president-blue-grey, .president-hover-blue-grey:hover, .president-blue-gray, .president-hover-blue-gray:hover {
+    color: #fff !important;
+    background-color: #607d8b !important
+}
+
+.president-green, .president-hover-green:hover {
+    color: #fff !important;
+    background-color: #4CAF50 !important
+}
+
+.president-light-green, .president-hover-light-green:hover {
+    color: #000 !important;
+    background-color: #8bc34a !important
+}
+
+.president-indigo, .president-hover-indigo:hover {
+    color: #fff !important;
+    background-color: #3f51b5 !important
+}
+
+.president-khaki, .president-hover-khaki:hover {
+    color: #000 !important;
+    background-color: #f0e68c !important
+}
+
+.president-lime, .president-hover-lime:hover {
+    color: #000 !important;
+    background-color: #cddc39 !important
+}
+
+.president-orange, .president-hover-orange:hover {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+.president-deep-orange, .president-hover-deep-orange:hover {
+    color: #fff !important;
+    background-color: #ff5722 !important
+}
+
+.president-pink, .president-hover-pink:hover {
+    color: #fff !important;
+    background-color: #e91e63 !important
+}
+
+.president-purple, .president-hover-purple:hover {
+    color: #fff !important;
+    background-color: #9c27b0 !important
+}
+
+.president-deep-purple, .president-hover-deep-purple:hover {
+    color: #fff !important;
+    background-color: #673ab7 !important
+}
+
+.president-red, .president-hover-red:hover {
+    color: #fff !important;
+    background-color: #f44336 !important
+}
+
+.president-sand, .president-hover-sand:hover {
+    color: #000 !important;
+    background-color: #fdf5e6 !important
+}
+
+.president-teal, .president-hover-teal:hover {
+    color: #fff !important;
+    background-color: #009688 !important
+}
+
+.president-yellow, .president-hover-yellow:hover {
+    color: #000 !important;
+    background-color: #ffeb3b !important
+}
+
+.president-white, .president-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.president-black, .president-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.president-brown-black, .president-hover-black:hover {
+    color: #fff !important;
+    background-color: #333 !important
+}
+
+.president-grey, .president-hover-grey:hover, .president-gray, .president-hover-gray:hover {
+    color: #000 !important;
+    background-color: #9e9e9e !important
+}
+
+.president-light-grey, .president-hover-light-grey:hover, .president-light-gray, .president-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.president-dark-grey, .president-hover-dark-grey:hover, .president-dark-gray, .president-hover-dark-gray:hover {
+    color: #fff !important;
+    background-color: #616161 !important
+}
+
+.president-pale-red, .president-hover-pale-red:hover {
+    color: #000 !important;
+    background-color: #ffdddd !important
+}
+
+.president-pale-green, .president-hover-pale-green:hover {
+    color: #000 !important;
+    background-color: #ddffdd !important
+}
+
+.president-pale-yellow, .president-hover-pale-yellow:hover {
+    color: #000 !important;
+    background-color: #ffffcc !important
+}
+
+.president-pale-blue, .president-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
+
+.president-text-amber, .president-hover-text-amber:hover {
+    color: #ffc107 !important
+}
+
+.president-text-aqua, .president-hover-text-aqua:hover {
+    color: #00ffff !important
+}
+
+.president-text-blue, .president-hover-text-blue:hover {
+    color: #2196F3 !important
+}
+
+.president-text-light-blue, .president-hover-text-light-blue:hover {
+    color: #87CEEB !important
+}
+
+.president-text-brown, .president-hover-text-brown:hover {
+    color: #795548 !important
+}
+
+.president-text-cyan, .president-hover-text-cyan:hover {
+    color: #00bcd4 !important
+}
+
+.president-text-blue-grey, .president-hover-text-blue-grey:hover, .president-text-blue-gray, .president-hover-text-blue-gray:hover {
+    color: #607d8b !important
+}
+
+.president-text-green, .president-hover-text-green:hover {
+    color: #4CAF50 !important
+}
+
+.president-text-light-green, .president-hover-text-light-green:hover {
+    color: #8bc34a !important
+}
+
+.president-text-indigo, .president-hover-text-indigo:hover {
+    color: #3f51b5 !important
+}
+
+.president-text-khaki, .president-hover-text-khaki:hover {
+    color: #b4aa50 !important
+}
+
+.president-text-lime, .president-hover-text-lime:hover {
+    color: #cddc39 !important
+}
+
+.president-text-orange, .president-hover-text-orange:hover {
+    color: #ff9800 !important
+}
+
+.president-text-deep-orange, .president-hover-text-deep-orange:hover {
+    color: #ff5722 !important
+}
+
+.president-text-pink, .president-hover-text-pink:hover {
+    color: #e91e63 !important
+}
+
+.president-text-purple, .president-hover-text-purple:hover {
+    color: #9c27b0 !important
+}
+
+.president-text-deep-purple, .president-hover-text-deep-purple:hover {
+    color: #673ab7 !important
+}
+
+.president-text-red, .president-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.president-text-sand, .president-hover-text-sand:hover {
+    color: #fdf5e6 !important
+}
+
+.president-text-teal, .president-hover-text-teal:hover {
+    color: #009688 !important
+}
+
+.president-text-yellow, .president-hover-text-yellow:hover {
+    color: #d2be0e !important
+}
+
+.president-text-white, .president-hover-text-white:hover {
+    color: #fff !important
+}
+
+.president-text-black, .president-hover-text-black:hover {
+    color: #000 !important
+}
+
+.president-text-grey, .president-hover-text-grey:hover, .president-text-gray, .president-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+.president-text-light-grey, .president-hover-text-light-grey:hover, .president-text-light-gray, .president-hover-text-light-gray:hover {
+    color: #f1f1f1 !important
+}
+
+.president-text-dark-grey, .president-hover-text-dark-grey:hover, .president-text-dark-gray, .president-hover-text-dark-gray:hover {
+    color: #3a3a3a !important
+}
+
+.president-border-amber, .president-hover-border-amber:hover {
+    border-color: #ffc107 !important
+}
+
+.president-border-aqua, .president-hover-border-aqua:hover {
+    border-color: #00ffff !important
+}
+
+.president-border-blue, .president-hover-border-blue:hover {
+    border-color: #2196F3 !important
+}
+
+.president-border-light-blue, .president-hover-border-light-blue:hover {
+    border-color: #87CEEB !important
+}
+
+.president-border-brown, .president-hover-border-brown:hover {
+    border-color: #795548 !important
+}
+
+.president-border-cyan, .president-hover-border-cyan:hover {
+    border-color: #00bcd4 !important
+}
+
+.president-border-blue-grey, .president-hover-border-blue-grey:hover, .president-border-blue-gray, .president-hover-border-blue-gray:hover {
+    border-color: #607d8b !important
+}
+
+.president-border-green, .president-hover-border-green:hover {
+    border-color: #4CAF50 !important
+}
+
+.president-border-light-green, .president-hover-border-light-green:hover {
+    border-color: #8bc34a !important
+}
+
+.president-border-indigo, .president-hover-border-indigo:hover {
+    border-color: #3f51b5 !important
+}
+
+.president-border-khaki, .president-hover-border-khaki:hover {
+    border-color: #f0e68c !important
+}
+
+.president-border-lime, .president-hover-border-lime:hover {
+    border-color: #cddc39 !important
+}
+
+.president-border-orange, .president-hover-border-orange:hover {
+    border-color: #ff9800 !important
+}
+
+.president-border-deep-orange, .president-hover-border-deep-orange:hover {
+    border-color: #ff5722 !important
+}
+
+.president-border-pink, .president-hover-border-pink:hover {
+    border-color: #e91e63 !important
+}
+
+.president-border-purple, .president-hover-border-purple:hover {
+    border-color: #9c27b0 !important
+}
+
+.president-border-deep-purple, .president-hover-border-deep-purple:hover {
+    border-color: #673ab7 !important
+}
+
+.president-border-red, .president-hover-border-red:hover {
+    border-color: #f44336 !important
+}
+
+.president-border-sand, .president-hover-border-sand:hover {
+    border-color: #fdf5e6 !important
+}
+
+.president-border-teal, .president-hover-border-teal:hover {
+    border-color: #009688 !important
+}
+
+.president-border-yellow, .president-hover-border-yellow:hover {
+    border-color: #ffeb3b !important
+}
+
+.president-border-white, .president-hover-border-white:hover {
+    border-color: #fff !important
+}
+
+.president-border-black, .president-hover-border-black:hover {
+    border-color: #000 !important
+}
+
+.president-border-grey, .president-hover-border-grey:hover, .president-border-gray, .president-hover-border-gray:hover {
+    border-color: #9e9e9e !important
+}
+
+.president-border-light-grey, .president-hover-border-light-grey:hover, .president-border-light-gray, .president-hover-border-light-gray:hover {
+    border-color: #f1f1f1 !important
+}
+
+.president-border-dark-grey, .president-hover-border-dark-grey:hover, .president-border-dark-gray, .president-hover-border-dark-gray:hover {
+    border-color: #616161 !important
+}
+
+.president-border-pale-red, .president-hover-border-pale-red:hover {
+    border-color: #ffe7e7 !important
+}
+
+.president-border-pale-green, .president-hover-border-pale-green:hover {
+    border-color: #e7ffe7 !important
+}
+
+.president-border-pale-yellow, .president-hover-border-pale-yellow:hover {
+    border-color: #ffffcc !important
+}
+
+.president-border-pale-blue, .president-hover-border-pale-blue:hover {
+    border-color: #e7ffff !important
+}
+
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover {
+    background-color: #111;
+}
